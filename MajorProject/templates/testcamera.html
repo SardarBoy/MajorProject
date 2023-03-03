@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="/static/testcamera.js"></script>
+    <link rel="stylesheet" href="/static/testcamera.css" media="screen">
+    <title>Akshi</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="home">Home</a>
+                    <a href="about">About</a>
+                    <a href="testcamera">Camera</a>
+
+
+
+                </div>
+                <button class="openbtn" onclick="openNav()">☰ </button>
+                <div class="outer-box">
+                    <h3 class="mt-5">Live Streaming</h3>
+
+                    <img style="height: 100%;width: 60%;margin:auto;" src="{{ url_for('video_feed') }}">
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
